@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="150px"-->
+    <!--        android:theme="@style/AppTheme.AppBarOverlay"-->
+    <!--        android:textAlignment="center"-->
+    <!--        >-->
+
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="YourScanner"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:textAlignment="center"
+
+        />
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/undraw_processing_thoughts" />
+
+    <Button
+        android:id="@+id/camera"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:text="Start Scanning"
+        android:onClick="StartActivity"
+
+
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/contained"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/round"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:onClick="StartOCR"
+        android:text="Perform OCR"
+        android:textSize="25dp" />
+
+
+</LinearLayout>
+
